@@ -1,71 +1,224 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Il mio primo sito</title>
-  <meta name="description" content="Presentazione e progetti del mio sito.">
+  <title>Topino — Un piccolo sito, una grande sorpresa</title>
+  <meta
+    name="description"
+    content="Un'esperienza digitale creata apposta per Topino."
+  >
+  <meta name="theme-color" content="#090b16">
 
   <link rel="stylesheet" href="./style.css">
   <script src="./script.js" defer></script>
 </head>
 
 <body>
-  <header class="barra">
-    <a class="logo" href="#">Il mio sito</a>
+  <div class="luce luce-uno" aria-hidden="true"></div>
+  <div class="luce luce-due" aria-hidden="true"></div>
 
-    <nav aria-label="Navigazione principale">
-      <a href="#progetti">Progetti</a>
-      <a href="#contatti">Contatti</a>
-    </nav>
+  <header class="barra contenitore">
+    <a class="logo" href="#" aria-label="Topino, pagina iniziale">
+      <span class="logo-icona" aria-hidden="true">T.</span>
+      TOPINO<span class="logo-extra">/ EXPERIENCE</span>
+    </a>
 
-    <button id="tema" type="button" aria-pressed="false">
-      Tema scuro
-    </button>
+    <a class="link-menu" href="#esperienza">
+      Scopri il progetto <span aria-hidden="true">↗</span>
+    </a>
   </header>
 
   <main>
-    <section class="presentazione">
-      <p class="etichetta">BENVENUTO NEL MIO SPAZIO</p>
-      <h1>Un sito costruito da me, un passo alla volta.</h1>
-      <p>
-        Qui potrò raccontare chi sono, mostrare i miei progetti
-        e condividere immagini e contenuti.
-      </p>
-      <a class="pulsante" href="#progetti">Scopri i progetti</a>
+    <section class="hero contenitore" aria-labelledby="titolo">
+      <div class="hero-testo">
+        <p class="etichetta">
+          <span class="punto" aria-hidden="true"></span>
+          CREATO APPOSITAMENTE PER TE
+        </p>
+
+        <h1 id="titolo">
+          Piccolo nome.<br>
+          <span class="testo-sfumato">Grande personalità.</span>
+        </h1>
+
+        <p class="introduzione">
+          Topino, questa non è una pagina qualunque.
+          È uno spazio progettato da zero, con un solo protagonista:
+          <strong>tu.</strong>
+        </p>
+
+        <div class="azioni">
+          <button class="pulsante principale" id="avvia" type="button">
+            Scopri cosa abbiamo preparato
+            <span aria-hidden="true">↗</span>
+          </button>
+
+          <a class="pulsante secondario" href="#esperienza">
+            Esplora la pagina
+          </a>
+        </div>
+
+        <p class="nota">Nessuna registrazione. Solo una certa dose di curiosità.</p>
+      </div>
+
+      <div class="hero-visuale">
+        <div class="orbita orbita-uno" aria-hidden="true"></div>
+        <div class="orbita orbita-due" aria-hidden="true"></div>
+
+        <article class="profilo">
+          <div class="profilo-testata">
+            <span>PERSONALITY CARD</span>
+            <span class="badge">EDIZIONE UNICA</span>
+          </div>
+
+          <div class="avatar" aria-hidden="true">🐭</div>
+
+          <h2>Topino</h2>
+          <p>Originale. Inimitabile. Leggermente sospetto.</p>
+
+          <div class="profilo-dati">
+            <div>
+              <strong>01</strong>
+              <span>Protagonista</span>
+            </div>
+            <div>
+              <strong>∞</strong>
+              <span>Potenziale</span>
+            </div>
+            <div>
+              <strong>?</strong>
+              <span>Affidabilità</span>
+            </div>
+          </div>
+
+          <div class="profilo-footer">
+            <span class="punto" aria-hidden="true"></span>
+            In attesa di valutazione
+          </div>
+        </article>
+
+        <span class="cartellino" aria-hidden="true">
+          ✦ Non il solito sito
+        </span>
+      </div>
     </section>
 
-    <section id="progetti" class="sezione">
-      <h2>I miei progetti</h2>
+    <section class="esperienza contenitore" id="esperienza">
+      <div class="titolo-sezione">
+        <div>
+          <p class="etichetta">DAL CODICE ALL'ESPERIENZA</p>
+          <h2>Un sito può fare<br>molto più che esistere.</h2>
+        </div>
+
+        <p>
+          Colori, movimento e interazioni:
+          ogni dettaglio contribuisce a raccontare qualcosa.
+        </p>
+      </div>
 
       <div class="griglia">
         <article class="scheda">
-          <h3>Primo progetto</h3>
-          <p>Qui inserirò una descrizione del mio lavoro.</p>
+          <span class="numero">01 / DESIGN</span>
+          <div class="simbolo" aria-hidden="true">✦</div>
+          <h3>Bello da vedere.</h3>
+          <p>
+            Sfumature luminose, spazi ampi e una gerarchia visiva
+            che mette al centro ciò che conta.
+          </p>
         </article>
 
         <article class="scheda">
-          <h3>Secondo progetto</h3>
-          <p>Uno spazio per un'altra idea o un contenuto.</p>
+          <span class="numero">02 / INTERAZIONE</span>
+          <div class="simbolo" aria-hidden="true">↗</div>
+          <h3>Interessante da usare.</h3>
+          <p>
+            Non soltanto una pagina da leggere:
+            un piccolo percorso con una sorpresa da scoprire.
+          </p>
         </article>
 
         <article class="scheda">
-          <h3>Terzo progetto</h3>
-          <p>Questa scheda potrà contenere anche un'immagine.</p>
+          <span class="numero">03 / PERSONALITÀ</span>
+          <div class="simbolo" aria-hidden="true">◎</div>
+          <h3>Impossibile da confondere.</h3>
+          <p>
+            Un nome, un carattere e un protagonista.
+            Questa volta, Topino, tocca proprio a te.
+          </p>
         </article>
       </div>
     </section>
 
-    <section id="contatti" class="sezione">
-      <h2>Contatti</h2>
-      <p>Qui aggiungerò i recapiti che desidero rendere pubblici.</p>
+    <section class="invito contenitore">
+      <p class="etichetta">IL MOMENTO DELLA VERITÀ</p>
+      <h2>Sei pronto a scoprire<br>il tuo risultato?</h2>
+      <p>Il reparto valutazione roditori è pronto a procedere.</p>
+
+      <button class="pulsante principale" id="avvia-secondario" type="button">
+        Avvia la valutazione <span aria-hidden="true">→</span>
+      </button>
     </section>
   </main>
 
-  <footer>
-    <p>Il mio primo sito — realizzato con HTML, CSS e JavaScript.</p>
+  <footer class="contenitore footer">
+    <span>TOPINO / EXPERIENCE</span>
+    <span>Fatto con codice, cura e un pizzico di malizia.</span>
   </footer>
+
+  <dialog id="sorpresa" aria-labelledby="titolo-dialogo">
+    <button
+      class="chiudi"
+      id="chiudi"
+      type="button"
+      aria-label="Chiudi la finestra"
+    >×</button>
+
+    <div id="caricamento">
+      <p class="etichetta">TOPINO ANALYSIS LAB</p>
+      <h2 id="titolo-dialogo">Analisi in corso.</h2>
+      <p id="stato" role="status">Preparazione della valutazione…</p>
+
+      <div
+        class="traccia"
+        id="progresso"
+        role="progressbar"
+        aria-label="Avanzamento della valutazione"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-valuenow="0"
+      >
+        <div id="barra-progresso"></div>
+      </div>
+
+      <p class="nota">Procedura altamente poco scientifica.</p>
+    </div>
+
+    <div id="risultato" hidden>
+      <div class="emoji-risultato" aria-hidden="true">🏆🐭</div>
+      <p class="etichetta">VALUTAZIONE COMPLETATA</p>
+      <h2 id="titolo-risultato" tabindex="-1">
+        Topino, sei stato<br><span class="testo-sfumato">preso in giro.</span>
+      </h2>
+
+      <p class="messaggio">
+        Ho costruito tutto questo soltanto per dimostrarti
+        che posso creare un bel sito…
+        <strong>e per farti cliccare su un pulsante.</strong>
+      </p>
+
+      <div class="verdetto">
+        <span>Verdetto finale</span>
+        <strong>100% Topino. 0% possibilità di scampo.</strong>
+      </div>
+
+      <button class="pulsante principale" id="coriandoli" type="button">
+        Va bene, festeggiamo 🎉
+      </button>
+    </div>
+  </dialog>
+
+  <div id="festa" aria-hidden="true"></div>
 </body>
 </html>
