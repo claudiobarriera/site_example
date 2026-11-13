@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Il mio primo sito</title>
+  <meta name="description" content="Presentazione e progetti del mio sito.">
+
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <header class="barra">
+    <a class="logo" href="#">Il mio sito</a>
+
+    <nav aria-label="Navigazione principale">
+      <a href="#progetti">Progetti</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+
+    <button id="tema" type="button" aria-pressed="false">
+      Tema scuro
+    </button>
+  </header>
+
+  <main>
+    <section class="presentazione">
+      <p class="etichetta">BENVENUTO NEL MIO SPAZIO</p>
+      <h1>Un sito costruito da me, un passo alla volta.</h1>
+      <p>
+        Qui potrò raccontare chi sono, mostrare i miei progetti
+        e condividere immagini e contenuti.
+      </p>
+      <a class="pulsante" href="#progetti">Scopri i progetti</a>
+    </section>
+
+    <section id="progetti" class="sezione">
+      <h2>I miei progetti</h2>
+
+      <div class="griglia">
+        <article class="scheda">
+          <h3>Primo progetto</h3>
+          <p>Qui inserirò una descrizione del mio lavoro.</p>
+        </article>
+
+        <article class="scheda">
+          <h3>Secondo progetto</h3>
+          <p>Uno spazio per un'altra idea o un contenuto.</p>
+        </article>
+
+        <article class="scheda">
+          <h3>Terzo progetto</h3>
+          <p>Questa scheda potrà contenere anche un'immagine.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contatti" class="sezione">
+      <h2>Contatti</h2>
+      <p>Qui aggiungerò i recapiti che desidero rendere pubblici.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Il mio primo sito — realizzato con HTML, CSS e JavaScript.</p>
+  </footer>
+</body>
+</html>
